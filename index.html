@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Yerzhana Musagalieva — Стоматологическая клиника</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="лого.jpeg" type="image/jpeg">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <div class="logo-icon">
+        <img src="лого.jpeg" alt="Dr. YM" onerror="this.style.display='none';this.parentElement.innerHTML='YM'">
+      </div>
+      <span class="logo-text">Dr. YM</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">О клинике</a></li>
+      <li><a href="#services">Услуги</a></li>
+      <li><a href="#prices">Цены</a></li>
+      <li><a href="#cases">До/После</a></li>
+      <li><a href="#reviews">Отзывы</a></li>
+      <li><a href="#contacts">Контакты</a></li>
+      <li><a href="https://wa.me/77007101100" class="nav-cta" target="_blank">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.562 4.14 1.537 5.875L0 24l6.324-1.506C8.01 23.456 9.97 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-1.899 0-3.67-.511-5.186-1.4l-.371-.222-3.755.894.944-3.641-.243-.386C2.61 15.381 2.182 13.74 2.182 12 2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z"/></svg>
+        Записаться
+      </a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-orbs">
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+  </div>
+  <div class="hero-grid-lines"></div>
+
+  <div class="hero-content">
+    <div class="hero-left">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Сеть клиник · Алматы · Работаем 24/7
+      </div>
+      <h1 class="hero-title">
+        Улыбка,<br>
+        <em>которой</em><br>
+        гордятся
+      </h1>
+      <p class="hero-subtitle">Три клиники в Алматы. Брекеты, виниры, импланты и отбеливание — с заботой и без боли.</p>
+
+      <div class="hero-actions">
+        <a href="https://wa.me/77007101100" class="btn-primary" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.562 4.14 1.537 5.875L0 24l6.324-1.506C8.01 23.456 9.97 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-1.899 0-3.67-.511-5.186-1.4l-.371-.222-3.755.894.944-3.641-.243-.386C2.61 15.381 2.182 13.74 2.182 12 2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z"/></svg>
+          Записаться в WhatsApp
+        </a>
+        <a href="#services" class="btn-outline">Наши услуги ↓</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">4.9<span class="star">★</span></span>
+          <span class="stat-label">Рейтинг 2ГИС</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">2000+</span>
+          <span class="stat-label">Отзывов</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">3</span>
+          <span class="stat-label">Филиала</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">24/7</span>
+          <span class="stat-label">Работаем</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-photo-wrap">
+        <div class="photo-frame">
+          <img src="WhatsApp Image 2026-06-08 at 3.32.32 PM.jpeg" alt="Улыбка" class="hero-img" onerror="this.parentElement.classList.add('no-photo')">
+          <div class="photo-fallback">
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            <span>Фото врача</span>
+          </div>
+        </div>
+        <div class="floating-card card1">
+          <div class="fc-icon">✦</div>
+          <div>
+            <strong>Бесплатно</strong>
+            <span>Первая консультация</span>
+          </div>
+        </div>
+        <div class="floating-card card2">
+          <div class="fc-icon">◎</div>
+          <div>
+            <strong>Рассрочка</strong>
+            <span>0-0-24 месяца</span>
+          </div>
+        </div>
+        <div class="floating-card card3">
+          <div class="fc-icon">⬟</div>
+          <div>
+            <strong>Без боли</strong>
+            <span>Седация и анестезия</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-wave">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="white"/>
+    </svg>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span>Виниры</span><span class="dot">✦</span>
+    <span>Брекеты</span><span class="dot">✦</span>
+    <span>Имплантация</span><span class="dot">✦</span>
+    <span>Отбеливание</span><span class="dot">✦</span>
+    <span>Протезирование</span><span class="dot">✦</span>
+    <span>Лечение кариеса</span><span class="dot">✦</span>
+    <span>Рассрочка 0-0-24</span><span class="dot">✦</span>
+    <span>Работаем 24/7</span><span class="dot">✦</span>
+    <span>Виниры</span><span class="dot">✦</span>
+    <span>Брекеты</span><span class="dot">✦</span>
+    <span>Имплантация</span><span class="dot">✦</span>
+    <span>Отбеливание</span><span class="dot">✦</span>
+    <span>Протезирование</span><span class="dot">✦</span>
+    <span>Лечение кариеса</span><span class="dot">✦</span>
+    <span>Рассрочка 0-0-24</span><span class="dot">✦</span>
+    <span>Работаем 24/7</span><span class="dot">✦</span>
+  </div>
+</div>
+
+<!-- ABOUT / ADVANTAGES -->
+<section class="advantages" id="about">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Почему мы</div>
+      <h2 class="section-title">Стоматология<br><em>нового уровня</em></h2>
+      <p class="section-desc">Современные технологии, опытные врачи и забота о каждом пациенте</p>
+    </div>
+
+    <div class="adv-grid">
+      <div class="adv-card" data-num="01">
+        <div class="adv-icon-wrap">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <h3>Зубы за один визит</h3>
+        <p>Современные технологии позволяют завершить лечение без лишних поездок</p>
+      </div>
+      <div class="adv-card" data-num="02">
+        <div class="adv-icon-wrap">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <h3>Лечение во сне</h3>
+        <p>Комфортная анестезия и седация — вы отдыхаете, пока врачи работают</p>
+      </div>
+      <div class="adv-card" data-num="03">
+        <div class="adv-icon-wrap">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+        </div>
+        <h3>Рассрочка 0-0-24</h3>
+        <p>24 месяца без первоначального взноса и переплат — за красивую улыбку</p>
+      </div>
+      <div class="adv-card" data-num="04">
+        <div class="adv-icon-wrap">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h3>Круглосуточно</h3>
+        <p>Два из трёх филиалов работают 24/7 — готовы помочь в любое время суток</p>
+      </div>
+      <div class="adv-card" data-num="05">
+        <div class="adv-icon-wrap">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <h3>Рейтинг 4.9★</h3>
+        <p>Более 2000 честных отзывов от пациентов подтверждают наше качество</p>
+      </div>
+      <div class="adv-card" data-num="06">
+        <div class="adv-icon-wrap">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <h3>Консультация бесплатно</h3>
+        <p>Первичная консультация и план лечения — абсолютно бесплатно</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-header light">
+      <div class="section-tag">Услуги</div>
+      <h2 class="section-title">Всё для<br><em>вашей улыбки</em></h2>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card large">
+        <div class="service-img">
+          <img src="брекеты.jpeg" alt="Виниры и брекеты" >
+          <div class="service-img-bg service-bg-1"></div>
+        </div>
+        <div class="service-body">
+          <div class="service-num">01</div>
+          <h3>Брекеты и виниры</h3>
+          <p>Металлические, корейские, немецкие и американские брекеты. Керамические и композитные виниры.</p>
+          <a href="#prices" class="service-link">Цены →</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-img">
+          <img src="имплантация.jpg" alt="Имплантация">
+          <div class="service-img-bg service-bg-2"></div>
+        </div>
+        <div class="service-body">
+          <div class="service-num">02</div>
+          <h3>Имплантация</h3>
+          <p>Современные имплантаты и циркониевые коронки для восстановления зубов навсегда.</p>
+          <a href="#prices" class="service-link">Цены →</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-img">
+          <img src="отбеливоние.webp" alt="Отбеливание" onerror="this.style.display='none'">
+          <div class="service-img-bg service-bg-3"></div>
+        </div>
+        <div class="service-body">
+          <div class="service-num">03</div>
+          <h3>Отбеливание</h3>
+          <p>Бразильское и корейское Zoom. До 3 тонов светлее за один визит.</p>
+          <a href="#prices" class="service-link">Цены →</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-img">
+          <div class="service-img-bg service-bg-4"><img src="лечение.webp" alt="Лечение и терапия" onerror="this.style.display='none'"></div>
+        </div>
+        <div class="service-body">
+          <div class="service-num">04</div>
+          <h3>Лечение и терапия</h3>
+          <p>Кариес, пульпит, периодонтит. Пломбирование каналов. Профессиональная чистка.</p>
+          <a href="#prices" class="service-link">Цены →</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-img">
+          <div class="service-img-bg service-bg-5"><img src="хирургия.webp" alt="Хирургия" onerror="this.style.display='none'"></div>
+        </div>
+        <div class="service-body">
+          <div class="service-num">05</div>
+          <h3>Хирургия</h3>
+          <p>Удаление зубов и зубов мудрости. Плазмолифтинг для быстрого заживления.</p>
+          <a href="#prices" class="service-link">Цены →</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-img">
+          <div class="service-img-bg service-bg-6"><img src="протез.webp" alt="Протезирование" onerror="this.style.display='none'"></div>
+        </div>
+        <div class="service-body">
+          <div class="service-num">06</div>
+          <h3>Протезирование</h3>
+          <p>Металлокерамические и циркониевые коронки. Съёмные и несъёмные протезы.</p>
+          <a href="#prices" class="service-link">Цены →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICES -->
+<section class="prices" id="prices">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Прайс-лист</div>
+      <h2 class="section-title">Прозрачные<br><em>цены</em></h2>
+      <p class="section-desc">Все три филиала в Алматы</p>
+    </div>
+
+    <div class="price-tabs">
+      <button class="tab-btn active" data-tab="beauty">Эстетика</button>
+      <button class="tab-btn" data-tab="ortho">Ортодонтия</button>
+      <button class="tab-btn" data-tab="therapy">Терапия</button>
+      <button class="tab-btn" data-tab="prosthetics">Протезирование</button>
+    </div>
+
+    <div class="price-content" id="priceContent">
+      <div class="price-panel active" data-panel="beauty">
+        <div class="price-item"><span>Отбеливание + чистка</span><span class="price">от 60 000 ₸</span></div>
+        <div class="price-item"><span>Отбеливание бразильское (2–3 тона)</span><span class="price">от 100 000 ₸</span></div>
+        <div class="price-item"><span>Отбеливание корейское Zoom-лампой</span><span class="price">от 100 000 ₸</span></div>
+        <div class="price-item"><span>Виниры (единица)</span><span class="price">от 60 000 ₸</span></div>
+        <div class="price-item"><span>Вкладка (единица)</span><span class="price">от 60 000 ₸</span></div>
+      </div>
+      <div class="price-panel" data-panel="ortho">
+        <div class="price-item"><span>Коррекция (одна челюсть)</span><span class="price">от 7 500 ₸</span></div>
+        <div class="price-item"><span>Брекеты металлические</span><span class="price">от 80 000 ₸</span></div>
+        <div class="price-item"><span>Брекеты — производство Корея</span><span class="price">от 100 000 ₸</span></div>
+        <div class="price-item"><span>Брекеты — производство Германия</span><span class="price">от 150 000 ₸</span></div>
+        <div class="price-item"><span>Брекеты — производство Америка</span><span class="price">от 200 000 ₸</span></div>
+        <div class="price-item"><span>Снятие брекет-системы (обе челюсти)</span><span class="price">от 40 000 ₸</span></div>
+        <div class="price-item"><span>Установка ретейнера (обе челюсти)</span><span class="price">от 15 000 ₸</span></div>
+        <div class="price-item"><span>Ретенционная каппа (одна челюсть)</span><span class="price">от 15 000 ₸</span></div>
+        <div class="price-item"><span>Снятие слепков (одна челюсть)</span><span class="price">от 12 000 ₸</span></div>
+      </div>
+      <div class="price-panel" data-panel="therapy">
+        <div class="price-item"><span>Пломба</span><span class="price">от 7 000 ₸</span></div>
+        <div class="price-item"><span>Удаление зуба</span><span class="price">от 7 000 ₸</span></div>
+        <div class="price-item"><span>Лечение кариеса</span><span class="price">от 10 000 ₸</span></div>
+        <div class="price-item"><span>Чистка 3-этапная</span><span class="price">от 15 000 ₸</span></div>
+        <div class="price-item"><span>Плазмолифтинг (1 процедура)</span><span class="price">от 15 000 ₸</span></div>
+        <div class="price-item"><span>Лечение пульпита</span><span class="price">от 45 000 ₸</span></div>
+        <div class="price-item"><span>Лечение периодонтита</span><span class="price">от 45 000 ₸</span></div>
+        <div class="price-item"><span>Отбеливание зубов</span><span class="price">от 25 000 ₸</span></div>
+      </div>
+      <div class="price-panel" data-panel="prosthetics">
+        <div class="price-item"><span>Металлокерамическая коронка</span><span class="price">от 25 000 ₸</span></div>
+        <div class="price-item"><span>Циркониевая коронка</span><span class="price">от 75 000 ₸</span></div>
+        <div class="price-item"><span>Микропротез (вся челюсть)</span><span class="price">от 20 000 ₸</span></div>
+        <div class="price-item"><span>Полный съёмный протез</span><span class="price">от 75 000 ₸</span></div>
+      </div>
+    </div>
+
+    <div class="price-cta">
+      <div class="price-cta-text">
+        <h3>Точная стоимость — после бесплатной консультации</h3>
+        <p>Приходите на осмотр, составим индивидуальный план лечения</p>
+      </div>
+      <a href="https://wa.me/77007101100" class="btn-primary" target="_blank">Записаться бесплатно</a>
+    </div>
+  </div>
+</section>
+
+<!-- CASES BEFORE/AFTER -->
+<section class="cases" id="cases">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Результаты</div>
+      <h2 class="section-title">До и<br><em>после</em></h2>
+      <p class="section-desc">Реальные работы — виниры, брекеты, импланты</p>
+    </div>
+
+    <div class="cases-tabs">
+      <button class="case-tab active" data-cat="veneers">Виниры и реставрация</button>
+      <button class="case-tab" data-cat="ortho">Ортодонтия</button>
+      <button class="case-tab" data-cat="implants">Имплантация</button>
+    </div>
+
+    <!-- Veneers — реальные фото -->
+    <div class="cases-grid active" data-cat="veneers">
+      <div class="case-card">
+        <div class="case-img-wrap">
+          <div class="case-side before">
+            <span class="case-label">До</span>
+            <img src="до1.jpeg" alt="До виниров 1">
+          </div>
+          <div class="case-arrow">→</div>
+          <div class="case-side after">
+            <span class="case-label">После</span>
+            <img src="после1.jpeg" alt="После виниров 1">
+          </div>
+        </div>
+        <div class="case-info">
+          <h4>Эстетическая реставрация</h4>
+          <p>Старые пломбы, потемнение эмали → полная реставрация виниром. Цвет, форма, симметрия.</p>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-img-wrap">
+          <div class="case-side before">
+            <span class="case-label">До</span>
+            <img src="до2.jpeg" alt="До виниров 2">
+          </div>
+          <div class="case-arrow">→</div>
+          <div class="case-side after">
+            <span class="case-label">После</span>
+            <img src="после2.jpeg" alt="После виниров 2">
+          </div>
+        </div>
+        <div class="case-info">
+          <h4>Выравнивание формы</h4>
+          <p>Неровные зубы, пятна на эмали → ровные, белые, одинаковые по форме виниры.</p>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-img-wrap">
+          <div class="case-side before">
+            <span class="case-label">До</span>
+            <img src="до3.jpeg" alt="До виниров 3">
+          </div>
+          <div class="case-arrow">→</div>
+          <div class="case-side after">
+            <span class="case-label">После</span>
+            <img src="после3.jpeg" alt="После виниров 3">
+          </div>
+        </div>
+        <div class="case-info">
+          <h4>Коррекция гипоплазии</h4>
+          <p>Пятнистость, нарушение формы → единый цвет и анатомически правильная форма.</p>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-img-wrap">
+          <div class="case-side before">
+            <span class="case-label">До</span>
+            <img src="до4.jpeg" alt="До виниров 4">
+          </div>
+          <div class="case-arrow">→</div>
+          <div class="case-side after">
+            <span class="case-label">После</span>
+            <img src="после4.jpeg" alt="После виниров 4">
+          </div>
+        </div>
+        <div class="case-info">
+          <h4>Тотальная реабилитация</h4>
+          <p>Стираемость, сколы, тёмная пигментация → восстановлена высота коронок и симметрия.</p>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-img-wrap">
+          <div class="case-side before">
+            <span class="case-label">До</span>
+            <img src="до5.jpeg" alt="До виниров 5">
+          </div>
+          <div class="case-arrow">→</div>
+          <div class="case-side after">
+            <span class="case-label">После</span>
+            <img src="после5.jpeg" alt="После виниров 5">
+          </div>
+        </div>
+        <div class="case-info">
+          <h4>Санация и реставрация</h4>
+          <p>Кариозные поражения, разрушенные зубы → виниры и коронки, симметрия и белизна.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ortho -->
+    <div class="cases-grid" data-cat="ortho">
+      <div class="case-card">
+        <div class="case-img-wrap">
+          <div class="case-side before">
+            <span class="case-label">До</span>
+            <img src="до111.jpeg"До брекетов 1">
+          </div>
+          <div class="case-arrow">→</div>
+          <div class="case-side after">
+            <span class="case-label">После</span>
+            <img src="после111.jpeg" alt="После брекетов 1">
+          </div>
+        </div>
+        <div class="case-info">
+          <h4>Скученность и прикус</h4>
+          <p>Скученность, глубокий прикус, отложения → выровнены ряды, скорректирован прикус.</p>
+        </div>
+      </div>
+      <div class="case-card">
+        <div class="case-img-wrap">
+          <div class="case-side before">
+            <span class="case-label">До</span>
+            <img src="до222.jpeg" alt="До брекетов 2">
+          </div>
+          <div class="case-arrow">→</div>
+          <div class="case-side after">
+            <span class="case-label">После</span>
+            <img src="после222.jpeg" alt="После брекетов 2">
+          </div>
+        </div>
+        <div class="case-info">
+          <h4>Создание пространства</h4>
+          <p>Выраженная скученность, повороты зубов → место создано, зубы в правильном положении.</p>
+        </div>
+      </div>
+      <div class="case-card">
+        <div class="case-img-wrap">
+          <div class="case-side before">
+            <span class="case-label">До</span>
+            <img src="до333.jpeg" alt="До брекетов 3">
+          </div>
+          <div class="case-arrow">→</div>
+          <div class="case-side after">
+            <span class="case-label">После</span>
+            <img src="после333.jpeg" alt="После брекетов 3">
+          </div>
+        </div>
+        <div class="case-info">
+          <h4>Смещение и щели</h4>
+          <p>Зубы смещены, асимметрия, щели → ряд выровнялся, улыбка ровная и аккуратная.</p>
+        </div>
+      </div>
+      <div class="case-card">
+        <div class="case-img-wrap">
+          <div class="case-side before">
+            <span class="case-label">До</span>
+            <img src="до444.jpeg" alt="До брекетов 4">
+          </div>
+          <div class="case-arrow">→</div>
+          <div class="case-side after">
+            <span class="case-label">После</span>
+            <img src="после444.jpeg" alt="После брекетов 4">
+          </div>
+        </div>
+        <div class="case-info">
+          <h4>Нижний ряд</h4>
+          <p>Скученность нижнего ряда → дуга стала плавной, прикус улучшился.</p>
+        </div>
+      </div>
+      <div class="case-card">
+        <div class="case-img-wrap">
+          <div class="case-side before">
+            <span class="case-label">До</span>
+            <img src="до555.jpeg" alt="До брекетов 5">
+          </div>
+          <div class="case-arrow">→</div>
+          <div class="case-side after">
+            <span class="case-label">После</span>
+            <img src="после555.jpeg" alt="После брекетов 5">
+          </div>
+        </div>
+        <div class="case-info">
+          <h4>Клыки и резцы</h4>
+          <p>Клыки выступали вперёд, щели, прикус нарушен → брекеты выстроили дугу.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Implants -->
+    <div class="cases-grid" data-cat="implants">
+      <div class="case-card">
+        <div class="case-img-wrap">
+          <div class="case-side before">
+            <span class="case-label">До</span>
+            <img src="до11.jpeg" alt="До имплантации 1">
+          </div>
+          <div class="case-arrow">→</div>
+          <div class="case-side after">
+            <span class="case-label">После</span>
+            <img src="после11.jpeg" alt="После имплантации 1">
+          </div>
+        </div>
+        <div class="case-info">
+          <h4>Полная реабилитация</h4>
+          <p>Частичная адентия, разрушенные зубы → имплантаты и коронки, функция и эстетика.</p>
+        </div>
+      </div>
+      <div class="case-card">
+        <div class="case-img-wrap">
+          <div class="case-side before">
+            <span class="case-label">До</span>
+            <img src="до22.jpeg" alt="До имплантации 2">
+          </div>
+          <div class="case-arrow">→</div>
+          <div class="case-side after">
+            <span class="case-label">После</span>
+            <img src="после22.jpeg" alt="После имплантации 2">
+          </div>
+        </div>
+        <div class="case-info">
+          <h4>Комплексное протезирование</h4>
+          <p>Сильная стираемость, потеря формы → керамические коронки, прикус и красота.</p>
+        </div>
+      </div>
+      <div class="case-card">
+        <div class="case-img-wrap">
+          <div class="case-side before">
+            <span class="case-label">До</span>
+            <img src="до33.jpeg" alt="До имплантации 3">
+          </div>
+          <div class="case-arrow">→</div>
+          <div class="case-side after">
+            <span class="case-label">После</span>
+            <img src="после33.jpeg" alt="После имплантации 3">
+          </div>
+        </div>
+        <div class="case-info">
+          <h4>Импланты и цирконий</h4>
+          <p>Сколы, тремы, отсутствующие зубы → импланты + цирконий = ровная здоровая улыбка.</p>
+        </div>
+      </div>
+      <div class="case-card">
+        <div class="case-img-wrap">
+          <div class="case-side before">
+            <span class="case-label">До</span>
+            <img src="до44.jpeg" alt="До имплантации 4">
+          </div>
+          <div class="case-arrow">→</div>
+          <div class="case-side after">
+            <span class="case-label">После</span>
+            <img src="после44.jpeg" alt="После имплантации 4">
+          </div>
+        </div>
+        <div class="case-info">
+          <h4>Восстановление ряда</h4>
+          <p>Кариес, щели, патологическая стираемость → ортопедическая конструкция восстановила ряд.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="container">
+    <div class="section-header light">
+      <div class="section-tag">Отзывы</div>
+      <h2 class="section-title">Нас<br><em>рекомендуют</em></h2>
+      <div class="rating-summary">
+        <div class="rating-big">4.9</div>
+        <div>
+          <div class="rating-stars">★★★★★</div>
+          <div class="rating-count">2 000+ отзывов на 2ГИС</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p>«Неплохая клиника! Проходила лечение и даже удаление зубов. Отдельное спасибо врачам Исламу и Нуршату — мастера своего дела!»</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">ГБ</div>
+          <div class="reviewer-name">Guldana Baikenova</div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p>«Мне понравилось всё: консультация, цены, процесс лечения! Познакомилась с врачом Андреем и администратором Инкар. Всем советую!»</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">АБ</div>
+          <div class="reviewer-name">Айгерим Б</div>
+        </div>
+      </div>
+      <div class="review-card featured">
+        <div class="review-stars">★★★★★</div>
+        <p>«Была у врача Нуршата Масимовича. Удалил зуб за пару минут, абсолютно безболезненно! Очень чуток, терпеливо всё объяснял. Рекомендую, 10/10. Рақмет!»</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">БА</div>
+          <div class="reviewer-name">Bota JS</div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p>«Отличная клиника! Обслуживаюсь более 4 лет и всегда довольна качеством, сервисом. Цены приемлемые — что сейчас очень важно. Рекомендую.»</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">АА</div>
+          <div class="reviewer-name">Алтынай А</div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p>«У меня откололся передний зуб — было очень заметно. В клинике восстановили его так, что никто не догадается. Спасибо за помощь и чуткость!»</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">ГО</div>
+          <div class="reviewer-name">Гульназ Омарова</div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p>«Очень понравилась клиника, особенно врач Габит. Превзошёл все мои ожидания — делала реставрацию зуба. Рекомендую.»</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">ZD</div>
+          <div class="reviewer-name">Zumrad Djamalova</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS + MAP -->
+<section class="contacts" id="contacts">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Контакты</div>
+      <h2 class="section-title">Три филиала<br><em>в Алматы</em></h2>
+    </div>
+
+    <div class="branches-grid">
+      <div class="branch-card active-branch" data-lat="43.2497" data-lng="76.9263">
+        <div class="branch-num">01</div>
+        <div class="branch-top">
+          <h3>Шевченко</h3>
+          <span class="branch-badge">24/7</span>
+        </div>
+        <p class="branch-addr">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          ул. Шевченко, 51
+        </p>
+        <div class="branch-rating">★★★★★ <span>4.9 · 624 оценки</span></div>
+        <a href="https://wa.me/77007101100" class="branch-btn" target="_blank">Записаться →</a>
+      </div>
+
+      <div class="branch-card" data-lat="43.26448" data-lng="76.920883">
+        <div class="branch-num">02</div>
+        <div class="branch-top">
+          <h3>Макатаева</h3>
+          <span class="branch-badge">24/7</span>
+        </div>
+        <p class="branch-addr">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          ул. Макатаева, 127
+        </p>
+        <div class="branch-rating">★★★★★ <span>4.9 · 780 оценок</span></div>
+        <a href="https://wa.me/77007101100" class="branch-btn" target="_blank">Записаться →</a>
+      </div>
+
+      <div class="branch-card" data-lat="43.2347988" data-lng="76.9562499">
+        <div class="branch-num">03</div>
+        <div class="branch-top">
+          <h3>Самал-1</h3>
+          <span class="branch-badge hours">08–22</span>
+        </div>
+        <p class="branch-addr">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          мкр. Самал-1, 9
+        </p>
+        <div class="branch-rating">★★★★☆ <span>4.8 · 596 оценок</span></div>
+        <a href="https://wa.me/77007101100" class="branch-btn" target="_blank">Записаться →</a>
+      </div>
+    </div>
+
+    <!-- MAP -->
+    <div class="map-wrap">
+      <iframe
+        id="clinicMap"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11842.10!2d76.9263!3d43.2497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDE0JzU4LjkiTiA3NsKwNTUnMzQuNiJF!5e0!3m2!1sru!2skz!4v1700000000000!5m2!1sru!2skz"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      <div class="map-pins">
+        <button class="map-pin-btn active" onclick="switchMap(43.2497, 76.9263, 'Шевченко 51')">📍 Шевченко</button>
+        <button class="map-pin-btn" onclick="switchMap(43.26448, 76.920883, 'Макатаева 127')">📍 Макатаева</button>
+        <button class="map-pin-btn" onclick="switchMap(43.2347988, 76.9562499, 'Самал-1 9')">📍 Самал-1</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-bg-shapes">
+    <div class="cta-shape s1"></div>
+    <div class="cta-shape s2"></div>
+  </div>
+  <div class="container">
+    <div class="cta-inner">
+      <div class="cta-text">
+        <div class="section-tag" style="margin-bottom:16px">Записаться</div>
+        <h2>Первая консультация —<br><em>бесплатно</em></h2>
+        <p>Запишитесь через WhatsApp и получите план лечения в подарок</p>
+      </div>
+      <a href="https://wa.me/77007101100" class="btn-primary large" target="_blank">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.562 4.14 1.537 5.875L0 24l6.324-1.506C8.01 23.456 9.97 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-1.899 0-3.67-.511-5.186-1.4l-.371-.222-3.755.894.944-3.641-.243-.386C2.61 15.381 2.182 13.74 2.182 12 2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z"/></svg>
+        Написать в WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="nav-logo" style="margin-bottom:14px">
+          <div class="logo-icon">
+            <img src="лого.jpeg" alt="Dr. YM" onerror="this.style.display='none';this.parentElement.innerHTML='YM'" style="width:24px;height:24px;object-fit:contain;border-radius:50%">
+          </div>
+          <span class="logo-text">Dr. YM</span>
+        </div>
+        <p>Сеть стоматологических клиник<br>Dr. Yerzhana Musagalieva</p>
+        <a href="https://wa.me/77007101100" class="footer-wa" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.562 4.14 1.537 5.875L0 24l6.324-1.506C8.01 23.456 9.97 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-1.899 0-3.67-.511-5.186-1.4l-.371-.222-3.755.894.944-3.641-.243-.386C2.61 15.381 2.182 13.74 2.182 12 2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z"/></svg>
+          +7 700 710 1100
+        </a>
+      </div>
+      <div class="footer-links">
+        <h4>Услуги</h4>
+        <a href="#services">Брекеты и виниры</a>
+        <a href="#services">Имплантация</a>
+        <a href="#services">Отбеливание</a>
+        <a href="#services">Протезирование</a>
+      </div>
+      <div class="footer-links">
+        <h4>Клиника</h4>
+        <a href="#about">О нас</a>
+        <a href="#cases">До и после</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+      </div>
+      <div class="footer-links">
+        <h4>Филиалы</h4>
+        <a href="#contacts">Шевченко, 51 (24/7)</a>
+        <a href="#contacts">Макатаева, 127 (24/7)</a>
+        <a href="#contacts">Самал-1, 9</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Dr. Yerzhana Musagalieva. Все права защищены.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/77007101100" class="wa-float" target="_blank" aria-label="WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.562 4.14 1.537 5.875L0 24l6.324-1.506C8.01 23.456 9.97 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-1.899 0-3.67-.511-5.186-1.4l-.371-.222-3.755.894.944-3.641-.243-.386C2.61 15.381 2.182 13.74 2.182 12 2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
